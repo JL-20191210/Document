@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="resp-2022.2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/redis/01-入门篇/资料/resp-2022.2.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="redis-demo">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/redis/01-入门篇/代码/redis-demo.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
