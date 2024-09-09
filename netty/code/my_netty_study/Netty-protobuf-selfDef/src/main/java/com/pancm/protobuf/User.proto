@@ -1,0 +1,65 @@
+syntax = "proto3";
+// 生成的包名
+option java_package="com.pancm.protobuf";
+//生成的java名
+option java_outer_classname = "UserInfo";
+
+message UserMsgLogin{
+      // 消息唯一ID
+      int32 id = 1;
+      // 内容
+      string content = 2;
+      // userID
+      int32 user_id = 3;
+      // userNME
+      string user_name = 4;
+      // 类型，1 = login 、2 = single、3 = mutiple、4 = quit、5 = server_ack
+      int32 type = 5;
+}
+message UserMsgSingle{
+      // 消息唯一ID
+      int32 id = 1;
+      // 内容
+      string content = 2;
+      // 来源
+      int32 from_id = 3;
+      // 来源
+      string from_name = 4;
+      // 去源
+      int32 to_id = 5;
+      // 去源
+      string to_name = 6;
+      // 类型，1 = login 、2 = single、3 = mutiple、4 = quit、5 = server_ack
+      int32 type = 7;
+}
+message UserMsgMutiple{
+      // 消息唯一ID
+      int32 id = 1;
+      // 内容
+      string content = 2;
+      // 来源
+      int32 from_id = 3;
+      // 来源
+      string from_name = 4;
+      // 去源group
+      int32 to_group_id = 5;
+      // 去源group
+      string to_group_name = 6;
+      // 类型，1 = login 、2 = single、3 = mutiple、4 = quit、5 = server_ack
+      int32 type = 7;
+}
+message UserMsgQuit{
+      // 消息唯一ID
+      int32 id = 1;
+      // bool
+      bool quit = 2;
+      // 类型，1 = login 、2 = single、3 = mutiple、4 = quit、5 = server_ack
+      int32 type = 7;
+}
+
+message UserMsgServerAck{
+      // 消息唯一ID
+      int32 id = 1;
+      // 类型，1 = login 、2 = single、3 = mutiple、4 = quit、5 = server_ack
+      int32 type = 2;
+}

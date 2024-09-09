@@ -1,0 +1,40 @@
+syntax = "proto3";
+
+//包路径，自定义，比package优先级高
+//如果java_package存在则默认使用java_package的配置，如果使用java_package就必须要指定package
+//以免在生成java以外的语言时，不存在java_package参数，造成命名秘密空间问题
+option java_package = "com.pancm.protobuf";
+//生成的外部类的名称，自定义 如果不定义则默认使用文件名的驼峰命名法转换的名称作为外部类名称
+option java_outer_classname = "MutipleMessageInfo";
+
+message Person{
+  enum DataType{
+    StudentType = 0;
+    TeacherType = 1;
+    LeaderType = 2;
+  }
+  DataType data_type = 1;
+  oneof DataList{
+    Student student = 2;
+    Teacher teacher = 3;
+    Leader leader = 4;
+  }
+}
+message Student{
+   int32 id = 1;
+   int32 stu_id = 2;
+   string stu_name = 3;
+}
+
+message Teacher{
+   int32 id = 1;
+   int32 t_id = 2;
+   string t_name = 3;
+}
+
+message Leader{
+   int32 id = 1;
+   int32 l_id = 2;
+   string l_name = 3;
+}
+

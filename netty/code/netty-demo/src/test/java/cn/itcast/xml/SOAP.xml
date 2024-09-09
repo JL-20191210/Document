@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope
+        xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+        xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        xmlns:ns1="http://security.service.ws.bitanswer.com/">
+    <SOAP-ENV:Header>
+        <ns1:developerKey>E7JOPWBH-2LLTM3FI</ns1:developerKey>
+    </SOAP-ENV:Header>
+    <SOAP-ENV:Body>
+        <ns1:communicationTunnel>
+            <arg0>SNRQ50C090438AADCBBUQBcAAAAYCATUp8ZSuzB3antH1T9auz0qzAbcI/vyGvjEEPmJS+LLytSslRhMIYwP+en2prFig3U4bOLfP0POc7q0IdOIC8ABt+TAv+Ht+C/mrhgtJSUPgjbTALPfGwhvMbkcCZHledG07HwEi9ZR/flST0JiQ==</arg0>
+        </ns1:communicationTunnel>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
