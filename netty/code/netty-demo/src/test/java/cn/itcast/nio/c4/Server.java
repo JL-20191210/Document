@@ -54,7 +54,7 @@ public class Server {
                             key.cancel();
                         } else {
                             buffer.flip();
-//                            debugAll(buffer);
+//                          debugAll(buffer);
                             System.out.println(Charset.defaultCharset().decode(buffer));
                         }
                     } catch (IOException e) {
